@@ -3,19 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Center of Water Governance</title>
+    <title>Center For Water Governance</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js" defer></script>
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 <body>
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark sticky-top custom-navbar">
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top custom-navbar" id="navbar">
     <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="#">
             <img src="assets/images/logo.png" alt="Logo" class="navbar-logo">
-            <span class="fw-bold ms-2 d-none d-lg-inline">Center of Water Governance</span>
+            <span class="fw-bold ms-2 d-none d-lg-inline">Center For Water Governance</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,6 +29,7 @@
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#programs">Programs</a></li>
+                <li class="nav-item"><a class="nav-link" href="#gallery">Pictorial</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 <li class="nav-item d-lg-none">
                     <a href="#get-involved" class="btn btn-highlight btn-block mt-2 fw-bold nav-btn">Get Involved</a>
@@ -58,16 +63,20 @@
 
             <!-- Image -->
             <div class="col-lg-6 text-center fade-in">
-                <img src="assets/images/about.png" alt="Water Governance" class="about-image">
+                <img src="assets/images/water-advocacy.png" alt="Water Governance" class="about-image">
             </div>
             <!-- Text Content -->
             <div class="col-lg-6 text-center text-lg-start fade-in">
-                <h2 class="section-title">Who We Are</h2>
+                <h2 class="section-title mt-2">Who We Are</h2>
                 <p class="section-text">
-                    The <strong>Center of Water Governance</strong> is dedicated to improving water sanitation and waste
-                    management across Kenya. Through sustainable programs, policy advocacy, and community involvement,
-                    we strive to ensure access to clean and safe water for all.
+                    <strong>The Center For Water Governance (CWG), </strong> is an NGO that Educates & Empowers
+                    communities in issues
+                    of WASH (Water, Sanitation & Health).
+                    The education involves Re-using, Reducing & Recycling of waste.
                 </p>
+                <p class="section-text">The target communities are those living in marginalised areas/slums & in the
+                    rural areas where there
+                    is little or no access to clean water & sanitation facilities</p>
                 <div class="about-highlights">
                     <div class="highlight">
                         <i class="fas fa-tint"></i>
@@ -113,7 +122,7 @@
         <h2 class="section-title">Our Programs</h2>
         <p class="section-subtitle">Driving sustainable change in water governance</p>
 
-        <div class="programs-grid">
+        <div class="programs-wrapper">
             <!-- Program 1 -->
             <div class="program-card">
                 <div class="program-image">
@@ -133,20 +142,20 @@
                 </div>
                 <div class="program-content">
                     <h3>Waste Management</h3>
-                    <p>We implement waste reduction strategies and educate communities on proper disposal methods to
-                        protect the environment.</p>
+                    <p>We implement waste reduction strategies and educate communities on proper disposal and recycling
+                        techniques.</p>
                 </div>
             </div>
 
             <!-- Program 3 -->
             <div class="program-card">
                 <div class="program-image">
-                    <img src="assets/images/community.png" alt="Community Engagement">
+                    <img src="assets/images/water-advocacy.png" alt="Water Policy Advocacy">
                 </div>
                 <div class="program-content">
-                    <h3>Community Engagement</h3>
-                    <p>Through workshops and public forums, we empower communities with knowledge about water
-                        conservation and sustainable practices.</p>
+                    <h3>Water Policy Advocacy</h3>
+                    <p>Our team works with local governments to advocate for policies that protect water resources and
+                        promote sustainability.</p>
                 </div>
             </div>
         </div>
@@ -154,33 +163,96 @@
 </section>
 
 
-<!-- Call to Action -->
-<section class="cta-section text-center py-5">
-    <h2>Get Involved</h2>
-    <p>Join us in making a difference. Support our mission through donations, partnerships, or volunteering.</p>
-    <a href="#contact" class="btn btn-success mt-3">Join Us</a>
+<!--Gallery Section-->
+<section id="gallery" class="pictorial-section">
+    <div class="container">
+        <h2 class="section-title">Our Impact in Pictures</h2>
+        <p class="section-subtitle">A visual journey of our work in water governance</p>
+
+        <!-- Gallery Grid -->
+        <div class="gallery">
+            <img src="assets/images/about.png" alt="Clean Water Project" onclick="openLightbox(0)">
+            <img src="assets/images/community.png" alt="Community Training" onclick="openLightbox(1)">
+            <img src="assets/images/hero2.png" alt="Sustainable Water Solutions" onclick="openLightbox(2)">
+            <img src="assets/images/waste-management.png" alt="Waste Management Program" onclick="openLightbox(3)">
+            <img src="assets/images/water-access.png" alt="Water Advocacy Meeting" onclick="openLightbox(4)">
+            <img src="assets/images/water-advocacy.png" alt="Community Water Distribution" onclick="openLightbox(5)">
+            <img src="assets/images/water-advocacy.png" alt="Community Water Distribution" onclick="openLightbox(6)">
+            <img src="assets/images/water-advocacy.png" alt="Community Water Distribution" onclick="openLightbox(7)">
+        </div>
+    </div>
 </section>
+
+<!-- Lightbox -->
+<div id="lightbox-container" class="lightbox">
+    <span class="close-btn" onclick="closeLightbox()">&times;</span>
+    <button class="prev-btn" onclick="changeImage(-1)">&#10094;</button>
+    <img id="lightbox-image" class="lightbox-content">
+    <button class="next-btn" onclick="changeImage(1)">&#10095;</button>
+</div>
+
+
+<!-- Call to Action Section -->
+<section class="cta-section text-center" id="get-involved">
+    <div class="overlay">
+        <div class="container">
+            <h2 class="cta-title">Join the Movement for Clean Water</h2>
+            <p class="cta-subtitle">
+                Every action counts! Support us through <b>donations</b>, <b>partnerships</b>, or <b>volunteering</b>.
+            </p>
+
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-light">Donate</a>
+                <a href="#contact" class="btn btn-primary">Partner with Us</a>
+                <a href="#contact" class="btn btn-success">Volunteer</a>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <!-- Contact Section -->
-<section id="contact" class="container text-center py-5">
-    <h2>Contact Us</h2>
-    <p>Email: info@watergovernance.org | Phone: +254 700 000 000</p>
-    <form class="w-50 mx-auto mt-4">
-        <div class="mb-3">
-            <input type="text" class="form-control" placeholder="Your Name" required>
+<section id="contact" class="contact-section text-center">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Reach out for any inquiries.</p>
+
+        <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> info@cewago.org</p>
+            <p><i class="fas fa-phone"></i> +254 741 933 347</p>
         </div>
-        <div class="mb-3">
-            <input type="email" class="form-control" placeholder="Your Email" required>
-        </div>
-        <div class="mb-3">
-            <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Send Message</button>
-    </form>
+
+        <form class="contact-form" onsubmit="sendMail(event)">
+            <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+            <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+            <textarea id="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
 </section>
 
-<footer class="text-center py-3 bg-dark text-white">
-    <p>&copy; 2025 Center of Water Governance. All rights reserved.</p>
+<footer class="footer text-center text-white">
+    <div class="container">
+        <!-- Contact Info -->
+        <div class="footer-contact">
+            <p><i class="fas fa-envelope"></i> Email: <a
+                    href="mailto: info@cewago.org"> info@cewago.org</a></p>
+            <p><i class="fas fa-phone"></i> Phone: <a href="tel:+254 741 933 347">+254 741 933 347</a></p>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="footer-social">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+        <!-- Copyright -->
+        <p class="footer-copy">&copy; 2025 Center of Water Governance. All rights reserved.</p>
+        <p class="footer-copy">Designed & Developed by<strong> ArtYourDreams</strong></p>
+    </div>
 </footer>
+
 </body>
 </html>
