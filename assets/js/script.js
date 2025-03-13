@@ -209,3 +209,6 @@ function sendMail(event) {
     // Open default email client
     window.location.href = `mailto:info@watergovernance.org?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
+
+
+
