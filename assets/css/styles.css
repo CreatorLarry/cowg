@@ -1,9 +1,3 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-}
-
-
 /* Blur Effect on Scroll */
 .navbar.scrolled {
     background: rgba(0, 73, 253, 0.5); /* Blue with opacity */
@@ -85,6 +79,41 @@ body {
 
 body {
     font-family: 'Poppins', sans-serif;
+}
+
+/*Email*/
+/* Floating Email Button */
+.email-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ffcc00; /* Yellow */
+    color: #001f3f; /* Dark Blue */
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+    text-align: center;
+    z-index: 1000;
+}
+
+/* Icon Styling */
+.email-btn i {
+    font-size: 22px;
+}
+
+/* Hover Effect */
+.email-btn:hover {
+    background: #DEB887; /* Light Brown */
+    color: white;
+}
+
+/* Hide Button on Small Screens */
+@media (max-width: 992px) {
+    .email-btn {
+        display: none;
+    }
 }
 
 /* Hero Section */
