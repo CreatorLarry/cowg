@@ -939,3 +939,8 @@ body {
   font-size: 14px;
   opacity: 0.8;
 }
+
+.creator-name {
+  color: #ffcc00;
+  text-decoration: none;
+}
