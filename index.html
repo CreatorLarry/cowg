@@ -10,6 +10,8 @@
     <script src="assets/js/script.js" defer></script>
 
     <link rel="icon" href="assets/images/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+  rel="stylesheet">
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
@@ -33,8 +35,8 @@
                 <li class="nav-item"><a class="nav-link" href="#gallery">Pictorial</a></li>
                 <li class="nav-item"><a class="nav-link" href="#donate">Donate</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#get-involved">Participate</a></li>
                 <li class="nav-item d-lg-none">
-                    <a href="#get-involved" class="btn btn-highlight btn-block mt-2 fw-bold nav-btn">Participate</a>
                     <a class="nav-link" href="https://privateemail.com/appsuite/signin" target="_blank">
                         <i class="fas fa-envelope"></i> Email
                     </a>
@@ -172,32 +174,141 @@
     </div>
 </section>
 
-<!--Gallery Section-->
-<section id="gallery" class="pictorial-section">
-    <div class="container">
-        <h2 class="section-title">Our Impact in Pictures</h2>
-        <p class="section-subtitle">A visual journey of our work in water governance</p>
+<!-- Gallery Section -->
+<section id="gallery" class="gallery-section">
+  <div class="container">
 
-        <!-- Gallery Grid -->
-        <div class="gallery">
-            <img src="assets/images/about.png" alt="Clean Water Project" onclick="openLightbox(0)">
-            <img src="assets/images/community.png" alt="Community Training" onclick="openLightbox(1)">
-            <img src="assets/images/hero2.png" alt="Sustainable Water Solutions" onclick="openLightbox(2)">
-            <img src="assets/images/waste-management.png" alt="Waste Management Program" onclick="openLightbox(3)">
-            <img src="assets/images/water-access.png" alt="Water Advocacy Meeting" onclick="openLightbox(4)">
-            <img src="assets/images/water-advocacy.png" alt="Community Water Distribution" onclick="openLightbox(5)">
-            <img src="assets/images/grandma.png" alt="grandma image" onclick="openLightbox(6)">
-        </div>
+    <div class="gallery-header text-center">
+      <h2 class="section-title">Program Moments</h2>
+      <p class="section-subtitle">
+        Capturing meaningful moments from our programs and engagements
+      </p>
     </div>
+
+    <!-- Filters -->
+    <div class="gallery-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="retreats">Organization Meetings</button>
+      <button class="filter-btn" data-filter="teambuilding">Projects</button>
+      <!-- <button class="filter-btn" data-filter="forums">Forums</button> -->
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="gallery-grid">
+
+      <!-- Retreats -->
+      <div class="gallery-card retreats"
+     data-full="assets/images/last-meeting-dec-1.jpeg"
+     data-caption="Leadership Retreat">
+  <img src="assets/images/last-meeting-dec-1.jpeg" alt="Leadership Retreat">
+  <div class="gallery-caption">Meeting December 2025</div>
+</div>
+      <div class="gallery-card retreats"
+     data-full="assets/images/last-meeting-dec-2.jpeg"
+     data-caption="Leadership Retreat">
+  <img src="assets/images/last-meeting-dec-2.jpeg" alt="Leadership Retreat">
+  <div class="gallery-caption">Meeting December 2025</div>
+</div>
+      <div class="gallery-card retreats"
+     data-full="assets/images/last-meeting-dec-3.jpeg"
+     data-caption="Leadership Retreat">
+  <img src="assets/images/last-meeting-dec-3.jpeg" alt="Leadership Retreat">
+  <div class="gallery-caption">Meeting December 2025</div>
+</div>
+      <div class="gallery-card retreats"
+     data-full="assets/images/last-meeting-dec-4.jpeg"
+     data-caption="Leadership Retreat">
+  <img src="assets/images/last-meeting-dec-4.jpeg" alt="Leadership Retreat">
+  <div class="gallery-caption">Meeting December 2025</div>
+</div>
+      <div class="gallery-card retreats"
+     data-full="assets/images/last-meeting-dec-5.jpeg"
+     data-caption="Leadership Retreat">
+  <img src="assets/images/last-meeting-dec-5.jpeg" alt="Leadership Retreat">
+  <div class="gallery-caption">Meeting December 2025</div>
+</div>
+      <div class="gallery-card retreats"
+     data-full="assets/images/last-meeting-dec-6.jpeg"
+     data-caption="Leadership Retreat">
+  <img src="assets/images/last-meeting-dec-6.jpeg" alt="Leadership Retreat">
+  <div class="gallery-caption">Meeting December 2025</div>
+</div>
+      <div class="gallery-card retreats"
+     data-full="assets/images/last-meeting-dec-7.jpeg"
+     data-caption="Leadership Retreat">
+  <img src="assets/images/last-meeting-dec-7.jpeg" alt="Leadership Retreat">
+  <div class="gallery-caption">Meeting December 2025</div>
+</div>
+      <div class="gallery-card retreats"
+     data-full="assets/images/last-meeting-dec-8.jpeg"
+     data-caption="Leadership Retreat">
+  <img src="assets/images/last-meeting-dec-8.jpeg" alt="Leadership Retreat">
+  <div class="gallery-caption">Meeting December 2025</div>
+</div>
+
+
+
+      <!-- Team Building -->
+            <div class="gallery-card teambuilding"
+     data-full="assets/images/grandma.png"
+     data-caption="Projects">
+  <img src="assets/images/grandma.png" alt="Projects">
+  <div class="gallery-caption">Projects</div>
+</div>
+            <div class="gallery-card teambuilding"
+     data-full="assets/images/waste-management.png"
+     data-caption="Projects">
+  <img src="assets/images/waste-management.png" alt="Projects">
+  <div class="gallery-caption">Projects</div>
+</div>
+            <div class="gallery-card teambuilding"
+     data-full="assets/images/water-access.png"
+     data-caption="Projects">
+  <img src="assets/images/water-access.png" alt="Projects">
+  <div class="gallery-caption">Projects</div>
+</div>
+            <div class="gallery-card teambuilding"
+     data-full="assets/images/water-advocacy.png"
+     data-caption="Projects">
+  <img src="assets/images/water-advocacy.png" alt="Projects">
+  <div class="gallery-caption">Projects</div>
+</div>
+            <div class="gallery-card teambuilding"
+     data-full="assets/images/water-governance.png"
+     data-caption="Projects">
+  <img src="assets/images/water-governance.png" alt="Projects">
+  <div class="gallery-caption">Projects</div>
+</div>
+
+      <!-- Forums -->
+      <!-- <div class="gallery-card forums">
+        <img src="assets/images/forum1.jpg" alt="Community Forum">
+        <div class="gallery-caption">Community Forum</div>
+      </div>
+
+      <div class="gallery-card forums">
+        <img src="assets/images/forum2.jpg" alt="Policy Forum">
+        <div class="gallery-caption">Policy Forum</div>
+      </div> -->
+
+    </div>
+  </div>
 </section>
 
 <!-- Lightbox -->
-<div id="lightbox-container" class="lightbox">
-    <span class="close-btn" onclick="closeLightbox()">&times;</span>
-    <button class="prev-btn" onclick="changeImage(-1)">&#10094;</button>
-    <img id="lightbox-image" class="lightbox-content">
-    <button class="next-btn" onclick="changeImage(1)">&#10095;</button>
+<div id="lightbox" class="lightbox">
+  <span class="lightbox-close">&times;</span>
+
+  <button class="lightbox-nav prev">&#10094;</button>
+
+  <div class="lightbox-content">
+    <img id="lightbox-img" src="" alt="">
+    <p id="lightbox-caption"></p>
+  </div>
+
+  <button class="lightbox-nav next">&#10095;</button>
 </div>
+
 
 <!-- Call to Action Section -->
 <section class="cta-section text-center" id="get-involved">
@@ -228,9 +339,9 @@
             <div class="donation-box">
                 <i class="fas fa-university"></i>
                 <h3>Bank Transfer</h3>
-                <p><strong>Bank Name:</strong> NCBA Bank</p>
-                <p><strong>Account Name:</strong> Center for Water Governance</p>
-                <p><strong>Account Number:</strong> 2142770018</p>
+                <p><strong>Bank Name:</strong> Diamond Trust Bank (DTB)</p>
+                <p><strong>Paybill Number:</strong> 516600</p>
+                <p><strong>Account Number:</strong> 5207678001</p>
 
             </div>
 
@@ -302,6 +413,81 @@
         <p class="footer-copy">Designed & Developed by <strong>ArtYourDreams</strong></p>
     </div>
 </footer>
+
+<script>
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  const galleryItems = document.querySelectorAll(".gallery-card");
+
+  filterButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      // Active state
+      filterButtons.forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+
+      const filter = btn.dataset.filter;
+
+      galleryItems.forEach((item) => {
+        if (filter === "all" || item.classList.contains(filter)) {
+          item.classList.remove("hide");
+        } else {
+          item.classList.add("hide");
+        }
+      });
+    });
+  });
+
+  const galleryCards = document.querySelectorAll(".gallery-card");
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  const lightboxCaption = document.getElementById("lightbox-caption");
+  const closeBtn = document.querySelector(".lightbox-close");
+  const prevBtn = document.querySelector(".lightbox-nav.prev");
+  const nextBtn = document.querySelector(".lightbox-nav.next");
+
+  let currentIndex = 0;
+  const visibleCards = () =>
+    Array.from(galleryCards).filter(card => !card.classList.contains("hide"));
+
+  galleryCards.forEach((card, index) => {
+    card.addEventListener("click", () => {
+      const cards = visibleCards();
+      currentIndex = cards.indexOf(card);
+      openLightbox(cards[currentIndex]);
+    });
+  });
+
+  function openLightbox(card) {
+    lightbox.classList.add("show");
+    lightboxImg.src = card.dataset.full;
+    lightboxCaption.textContent = card.dataset.caption;
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove("show");
+  }
+
+  function changeSlide(direction) {
+    const cards = visibleCards();
+    currentIndex = (currentIndex + direction + cards.length) % cards.length;
+    openLightbox(cards[currentIndex]);
+  }
+
+  closeBtn.addEventListener("click", closeLightbox);
+  prevBtn.addEventListener("click", () => changeSlide(-1));
+  nextBtn.addEventListener("click", () => changeSlide(1));
+
+  document.addEventListener("keydown", (e) => {
+    if (!lightbox.classList.contains("show")) return;
+    if (e.key === "Escape") closeLightbox();
+    if (e.key === "ArrowLeft") changeSlide(-1);
+    if (e.key === "ArrowRight") changeSlide(1);
+  });
+
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+</script>
+
 
 
 </body>
