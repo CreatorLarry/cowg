@@ -281,7 +281,8 @@ body {
 
 /* Highlights */
 .about-highlights {
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 2rem;
 }
 
 .highlight {
@@ -343,6 +344,7 @@ body {
   border-radius: 25px;
   transition: all 0.3s ease-in-out;
   text-decoration: none;
+  margin-top: 20px;
 }
 
 .btn-about:hover {
